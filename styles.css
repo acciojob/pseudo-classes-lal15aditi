@@ -1,35 +1,35 @@
-/*  your css code here. If applicable */
-* {
-            margin: 0;
-            padding: 0;
-        }
-        :root {
-            background-color: rgb(135, 206, 235);
-        }
+:root{
+	background-color: rgb(135, 206, 235);
+}
+.paragraph :first-child{
+	background-color: black;
+	color: white;
+}
 
-        p:first-child {
-            background-color: black;
-            color: white;
-        }
-        p:nth-child(2) {
-            /* color: blue; */
-        }
-        p:last-child {
-            color: rgb(255, 0, 0);
-            background-color: white;
-        }
-        li {
-            background-color: grey;
-            width: 50%;
-            padding: 10px;
-            margin: 20px;
-        }
-        li:nth-child(2n+1) {
-            background-color: white;
-        }
-        li:first-child, li:last-child {
-            font-size: 22px;
-        }
-        li:last-child {
-            background-color: pink;
-        }
+.paragraph :last-child{
+	color: red;
+}
+
+
+.paragraph :nth-child(2){
+	color: black;
+}
+ul :nth-child(n){
+	width: 50%;
+	padding: 10px;
+}
+ul :nth-child(odd){
+	background-color: white;
+}
+
+ul :nth-child(even){
+	background-color: gray;
+}
+
+ul :nth-child(3){
+	background-color: pink;
+}
+
+ul :first-child, ul :last-child{
+	font-size: 22px;
+}
